@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPTOPS</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            /* border-collapse: collapse; */
+            border-radius: 10px;
+        }
+        td,th{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border-style: double;
+            border-color: blue;
+            
+        }
+        tr:nth-child(even){
+            color: red;
+            background-color: yellow;
+        }
+        tr:nth-child(odd){
+            color:yellow;
+            background-color: red;
+        }
+        th:hover{
+            background-color: chartreuse;
+        }
+        tr:hover{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h2>TOP LAPTOP BRANDS</h2>
+    <table onclick="tablealert()">
+        <tr>
+            <th>BRANDS</th>
+            <th>ORIGIN COUNTRY</th>
+            <th>LAUNCH DATE</th>
+            <th>MIN PRICE</th>
+            <th>MAX PRICE</th>
+        </tr>
+        <tr>
+            <td>APPPLE</td>
+            <td>USA</td>
+            <td>1991</td>
+            <td>79,990</td>
+            <td>1,99,990</td>
+        </tr>
+        <tr>
+            <td>HP</td>
+            <td>USA</td>
+            <td>1995</td>
+            <td>19,990</td>
+            <td>2,62,500</td>
+        </tr>
+        <tr>
+            <td>DELL</td>
+            <td>USA</td>
+            <td>1989</td>
+            <td>20,990</td>
+            <td>3,19,990</td>
+        </tr>
+        <tr>
+            <td>ASUS</td>
+            <td>TAIWAN</td>
+            <td>1989</td>
+            <td>13,990</td>
+            <td>4,04,990</td>
+        </tr>
+    </table>
+    <script>
+        function tablealert(){
+            alert('do not click on the table')
+        }
+    </script>
+</body>
+</html>
